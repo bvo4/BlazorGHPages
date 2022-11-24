@@ -1,4 +1,4 @@
-namespace BlazorGHPages.Data
+namespace BlazorApp1.Data
 {
     public class WeatherForecast
     {
