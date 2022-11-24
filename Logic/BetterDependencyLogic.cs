@@ -1,4 +1,4 @@
-﻿namespace BlazorApp1.Logic;
+﻿namespace BlazorGHPages.Logic;
 
 public class BetterDependencyLogic : IDependencyLogic
 {

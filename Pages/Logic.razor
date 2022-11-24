@@ -1,0 +1,18 @@
+﻿@page "/logic"
+@using BlazorGHPages.Logic
+@inject IDependencyLogic logic
+
+<h3>Value1: @logic.Value1</h3>
+<h3>Value2: @logic.Value2</h3>
+
+@code {
+
+//Note:  Do note write functions with the same name as the razor page.  This will confuse the compiler into trying to pull info from the page instead of the namespace
+
+   // private DependencyLogic logic;
+
+    protected override void OnInitialized()
+    {
+        //logic = new();
+    }
+}

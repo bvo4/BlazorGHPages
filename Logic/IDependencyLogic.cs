@@ -1,4 +1,4 @@
-﻿namespace BlazorApp1.Logic;
+﻿namespace BlazorGHPages.Logic;
 public interface IDependencyLogic
 {
     int Value1 { get;}
