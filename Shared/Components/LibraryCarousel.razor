@@ -1,13 +1,15 @@
-﻿<MudCarousel Class="mud-width-full" Style="height:200px;" TData="object">
+﻿<h3>Technical Skills</h3>
+
+<MudGrid Class="mud-width-full" >
 	@foreach(string Skill in Skills)
 	{
-		<MudCarouselItem>
+		<MudItem>
 			<div class="d-flex" style="height:100%">
 				<LanguageCard Language="@Skill" />
 			</div>
-		</MudCarouselItem>
+		</MudItem>
 	}
-</MudCarousel>
+</MudGrid>
 
 @code {
 	private IList<string> Skills { get; set; }

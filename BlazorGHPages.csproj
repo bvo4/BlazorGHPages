@@ -19,4 +19,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\Components\IntroductionHeader.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Shared\Components\IntroductionHeader.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pages\SubPage\IntroductionHeader.razor" />
+    <None Include="wwwroot\Images\GitHub.png" />
+    <None Include="wwwroot\Images\LinkedIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
 </Project>
