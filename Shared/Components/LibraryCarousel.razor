@@ -1,0 +1,27 @@
+﻿<MudCarousel Class="mud-width-full" Style="height:200px;" TData="object">
+	@foreach(string Skill in Skills)
+	{
+		<MudCarouselItem>
+			<div class="d-flex" style="height:100%">
+				<LanguageCard Language="@Skill" />
+			</div>
+		</MudCarouselItem>
+	}
+</MudCarousel>
+
+@code {
+	private IList<string> Skills { get; set; }
+	private int Index { get; set; }
+
+	protected override void OnInitialized()
+	{
+		LoadSkillSet();
+		base.OnInitialized();
+	}
+
+	//Load SkillSets from .json
+	public void LoadSkillSet()
+	{
+		Skills = AllSkills.Languages;
+	}
+}

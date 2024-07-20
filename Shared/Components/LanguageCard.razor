@@ -1,0 +1,15 @@
+﻿<MudCard>
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudText Typo="Typo.h6">@Language</MudText>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudText Typo="Typo.body2">Body</MudText>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter] public string Language{ get; set; }
+    [Parameter] public string IconURL{ get; set; }
+}
