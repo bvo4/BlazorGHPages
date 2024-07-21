@@ -1,15 +1,11 @@
-﻿<MudCard>
-    <MudCardHeader>
-        <CardHeaderContent>
-            <MudText Typo="Typo.h6">@Language</MudText>
-        </CardHeaderContent>
-    </MudCardHeader>
-    <MudCardContent>
-        <MudText Typo="Typo.body2">Body</MudText>
-    </MudCardContent>
-</MudCard>
+﻿<div class="container">
+    @Language.Language
+    <div class="drawer">
+        <hr />
+        <h3>@Language.Description</h3>
+    </div>
+</div>
 
 @code {
-    [Parameter] public string Language{ get; set; }
-    [Parameter] public string IconURL{ get; set; }
+    [Parameter] public ProgramLanguageModel Language{ get; set; }
 }

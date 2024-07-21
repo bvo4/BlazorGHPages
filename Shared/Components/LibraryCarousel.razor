@@ -1,7 +1,11 @@
-﻿<h3>Technical Skills</h3>
+﻿
+@using Microsoft.Extensions.Configuration;
+@inject IConfiguration Configuration;
 
-<MudGrid Class="mud-width-full" >
-	@foreach(string Skill in Skills)
+<h3 class="HeaderCenter">Technical Skills</h3>
+
+<MudGrid Style="align-content:center" Class="mud-width-full" >
+	@foreach (ProgramLanguageModel Skill in Skills)
 	{
 		<MudItem>
 			<div class="d-flex" style="height:100%">
@@ -12,7 +16,7 @@
 </MudGrid>
 
 @code {
-	private IList<string> Skills { get; set; }
+	private List<ProgramLanguageModel> Skills { get; set; } = new List<ProgramLanguageModel>();
 	private int Index { get; set; }
 
 	protected override void OnInitialized()
@@ -24,6 +28,16 @@
 	//Load SkillSets from .json
 	public void LoadSkillSet()
 	{
-		Skills = AllSkills.Languages;
+		Skills = new List<ProgramLanguageModel>();
+		List<string> Test = Configuration.GetSection("Languages").Get <List<string>>();
+		for(int i = 0; i < AllSkills.Languages.Count;i++)
+		{
+			Skills.Add(new ProgramLanguageModel()
+			{
+				Language = AllSkills.Languages[i],
+				Description = AllSkills.Description[i],
+				//Icon_URL = AllSkills.
+			});
+		}
 	}
 }
