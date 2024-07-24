@@ -9,11 +9,21 @@
 
     <WorkExperienceSection />
 
-    <LibraryCarousel />
+
+<flex class="v DualTables" style="flex: 3; z-index:5; position:relative; overflow:visible">
+    <flex-item id="FlexBoxTop" style="flex: 1;">
+        <LibraryCarousel />
+    </flex-item>
+        <flex-resizer id="ResizerClick" />
+        <flex class="v" style="flex: 0.5; z-index:5;">
+            <flex-item id="FlexBoxBottom" style="flex: 1;">
+                <ContactFooter />
+            </flex-item>
+        </flex>
+</flex>
 
     <hr />
 
-    <ContactFooter />
 </div>
 
 @code {
