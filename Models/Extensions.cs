@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Configuration;
 using MudBlazor;
+using System.Reflection;
+using System.ComponentModel;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace BlazorGHPages.Models
 {
@@ -61,9 +65,9 @@ namespace BlazorGHPages.Models
         {
             List<T> Temp = new List<T>();
             if (json.StartsWith("["))    //Check if the returned json string was an array
-                Temp.Add(json.Deserialize<T>());
+                Temp.Add(JsonSerializer.Deserialize<T>(json));
             else
-                Temp = json.Deserialize<List<T>>();  //Deserialize back into data
+                Temp = JsonSerializer.Deserialize<List<T>>(json);  //Deserialize back into data
 
             return Temp;
         }
