@@ -1,3 +1,4 @@
+/* Credit: https://codesandbox.io/s/sad-butterfly-1fwo4?fontsize=14&hidenavigation=1&theme=dark */
 function isResizerOpen() {
 	return document.contains(document.getElementById("ResizerClick"));
 }
@@ -42,8 +43,8 @@ function GrabFlexSiblings(FlexResizer) {
 	var FlexBoxBottom = FlexResizer.nextElementSibling;
 
 	/* Picks up the tables that are labelled with MainTable and  SubTable */
-	var ParentTable = FlexBoxTop.getElementsByClassName('MainTable')[0];		//Parent Table
-	var ChildTable = FlexBoxBottom.getElementsByClassName("SubTable")[0];		//Child Table
+	var ParentTable = FlexBoxTop.getElementsByClassName('Main')[0];		//Parent Table
+	var ChildTable = FlexBoxBottom.getElementsByClassName("Sub")[0];		//Child Table
 
 	return { ParentTable, ChildTable };
 }
