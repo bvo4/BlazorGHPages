@@ -26,6 +26,7 @@
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Shared\Components\IntroductionHeader.razor" />
     <_ContentIncludedByDefault Remove="wwwroot\css\LanguageEffect.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\ResumeStyling.css" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pages\SubPage\IntroductionHeader.razor" />
