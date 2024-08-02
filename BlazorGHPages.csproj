@@ -30,10 +30,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pages\SubPage\IntroductionHeader.razor" />
-    <None Include="wwwroot\Images\GitHub.png" />
-    <None Include="wwwroot\Images\LinkedIn.png" />
+    <None Include="wwwroot\css\Images\GitHub.png" />
+    <None Include="wwwroot\css\Images\LinkedIn.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\css\Images\" />
   </ItemGroup>
 </Project>

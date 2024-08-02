@@ -1,17 +1,27 @@
 ﻿.container {
-    width: 300px;
+    width: 400px;
     height: 100px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .drawer {
+    display: flex;
+    flex-wrap: nowrap;
     margin: 0 auto;
     transition: all 0.6s ease;
     position: relative;
     top: 100px;
 }
 
+.drawer:hover {
+    transition: height 1s ease;
+    transition-duration:1s;
+    overflow:hidden;
+    height: auto;
+}
+
 .container:hover .drawer {
     top: 10px;
 }
+
