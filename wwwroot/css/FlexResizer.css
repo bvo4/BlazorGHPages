@@ -43,3 +43,9 @@ flex.v > flex-resizer {
     cursor: ns-resize;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='10'><path d='M0 2 h30 M0 5 h30 M0 8 h30' fill='none' stroke='black'/></svg>");
 }
+
+.CustomDrawer {
+    top: auto;
+    width: 100%;
+    height: auto;
+}
