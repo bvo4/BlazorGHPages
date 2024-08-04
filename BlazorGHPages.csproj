@@ -19,6 +19,18 @@
     <Content Update="wwwroot\appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\css\Images\GitHub.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\css\Images\LinkedIn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\css\Images\LSU.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\css\Images\NYU.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <UpToDateCheckInput Remove="Shared\Components\IntroductionHeader.razor" />
@@ -30,10 +42,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pages\SubPage\IntroductionHeader.razor" />
-    <None Include="wwwroot\css\Images\GitHub.png" />
-    <None Include="wwwroot\css\Images\LinkedIn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\css\Images\" />
   </ItemGroup>
 </Project>
