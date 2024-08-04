@@ -7,12 +7,18 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudMainContent Style="height: 100vh; width: 100vw; max-width:100%">
+    <MudMainContent Style="height: 100vh; width: 100vw; max-width:100%; margin-top:0;">
         <MudPaper Class="flex-grow-1 mt-n4">
             @Body
         </MudPaper>
     </MudMainContent>
 </MudLayout>
+
+<style>
+    .mud-main-content{
+        padding-top:10px;
+    }
+</style>
 
 @code {
 

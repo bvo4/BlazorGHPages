@@ -2,33 +2,36 @@
 @using BlazorGHPages.Shared.Education;
 
 <div style="padding: 5px 20px;">
-
-    <IntroductionHeader />
-    <flex class="v DualTables" style="flex: 3; z-index:5; position:relative; overflow:visible">
-        <flex-item id="FlexBoxTop" style="flex: 1;">
-            <div class="Main">
-                <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
-                    <MudTabPanel Text="Education">
-                        <Degrees />
-                    </MudTabPanel>
-                    <MudTabPanel Text="Work Experience">
-                        <WorkExperienceSection />
-                    </MudTabPanel>
-                    <MudTabPanel Text="Software & Languages">
-                            <LibraryCarousel />
-                    </MudTabPanel>
-                </MudTabs>
-            </div>
+	<flex class="v" style="flex: 0.8; height: 98vh;">
+		<flex-item style="flex: 1;">
+            <IntroductionHeader />
         </flex-item>
-        <flex-resizer id="ResizerClick" />
-        <flex class="v" style="flex: 0.5; z-index:5;">
-            <flex-item id="FlexBoxBottom" style="flex: 1;">
+		<flex-resizer/>
+		<flex class="v" style="flex: 4; ">
+            <flex-item style="flex: 2;">
+                <div class="Main" style="height:100%">
+                    <MudTabs Elevation="2" Rounded="true" Style="height:100%; overflow:scroll" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                        <MudTabPanel Text="Education">
+                            <Degrees />
+                        </MudTabPanel>
+                        <MudTabPanel Text="Work Experience">
+                            <WorkExperienceSection />
+                        </MudTabPanel>
+                        <MudTabPanel Text="Software & Languages">
+                            <LibraryCarousel />
+                        </MudTabPanel>
+                    </MudTabs>
+                </div>
+            </flex-item>
+		    <flex-resizer/>
+            <flex-item style="flex: 0.2;">
                 <div class="Sub">
                     <ContactFooter />
                 </div>
             </flex-item>
-        </flex>
-    </flex>
+	    </flex>
+	</flex>
+
 </div>
 
 @code {
