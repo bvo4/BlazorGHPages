@@ -27,6 +27,7 @@ body {
 .bubbles {
     position: relative;
     display: flex;
+    z-index:-99;
 }
 
     .bubbles span {
