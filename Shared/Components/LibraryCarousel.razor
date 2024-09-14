@@ -4,16 +4,14 @@
 
 <h3 class="HeaderCenter">Technical Skills</h3>
 
-<MudGrid Style="align-content:center " Class="mud-width-full" >
-	@foreach (ProgramLanguageModel Skill in Skills)
-	{
-		<MudItem>
-			<div class="d-flex" style="height:100%">
-				<LanguageCard Language="@Skill" />
-			</div>
-		</MudItem>
-	}
-</MudGrid>
+<MudExpansionPanels Outlined="true" Elevation="0">
+@foreach (ProgramLanguageModel Skill in Skills)
+{
+	<MudExpansionPanel Text="@Skill.Language">
+		<LanguageCard Language="@Skill" />
+	</MudExpansionPanel>
+}
+</MudExpansionPanels>
 
 @code {
 	private List<ProgramLanguageModel> Skills { get; set; } = new List<ProgramLanguageModel>();

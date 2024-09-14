@@ -9,22 +9,26 @@
 		<flex-resizer/>
 		<flex class="v" style="flex: 4; ">
             <flex-item style="flex: 2;">
-                <div class="Main" style="height:100%">
-                    <MudTabs Elevation="2" Rounded="true" Style="height:100%; overflow:scroll" ApplyEffectsToContainer="true" PanelClass="pa-6">
+                <div class="Main">
+                    <MudTabs Color="@Color.Primary" Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-0 MaxHeight">
                         <MudTabPanel Text="Education">
                             <Degrees />
                         </MudTabPanel>
                         <MudTabPanel Text="Work Experience">
-                            <WorkExperienceSection />
+                            <MudPaper Style="width:100%; height:100%;">
+                                <WorkExperienceSection />
+                            </MudPaper>
                         </MudTabPanel>
                         <MudTabPanel Text="Software & Languages">
-                            <LibraryCarousel />
+                            <MudPaper>
+                                <LibraryCarousel />
+                            </MudPaper>
                         </MudTabPanel>
                     </MudTabs>
                 </div>
             </flex-item>
 		    <flex-resizer/>
-            <flex-item style="flex: 0.2;">
+            <flex-item style="flex: 0.4;">
                 <div class="Sub">
                     <ContactFooter />
                 </div>

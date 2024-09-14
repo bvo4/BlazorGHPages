@@ -3,38 +3,12 @@
     {
         <span style="@GenerateOffSet()" />
     }
-
-    @*
-    <span style="--i:5;" />
-    <span style="--i:87;" />
-    <span style="--i:56;" />
-    <span style="--i:22;" />
-    <span style="--i:152;" />
-    <span style="--i:86;" />
-    <span style="--i:22;" />
-    <span style="--i:16;" />
-    <span style="--i:89;" />
-    <span style="--i:100;" />
-    <span style="--i:150;" />
-    <span style="--i:52;" />
-    <span style="--i:20;" />
-    <span style="--i:25;" />
-    <span style="--i:26;" />
-    <span style="--i:27;" />
-    <span style="--i:32;" />
-    <span style="--i:52;" />
-    <span style="--i:74;" />
-    <span style="--i:20;" />
-    <span style="--i:542;" />
-    <span style="--i:87;" />
-    <span style="--i:99;" />
-*@
 </div>
 
 @code {
     public string GenerateOffSet()
     {
         Random rnd = new Random();
-        return string.Format("--i:{0};", rnd.Next(1, 100));
+        return string.Format("--i:{0};", rnd.Next(1, 50));
     }
 }
