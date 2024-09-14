@@ -1,3 +1,10 @@
 ﻿.HeaderCenter{
     text-align:center;
+    /* Needed so that the text doesn't get overlayed by the bubble animation  */
+    position:relative;
+    z-index:3;         /* Requires position for z-index to apply */
+}
+
+p, h1, h5{
+    color:white;
 }
